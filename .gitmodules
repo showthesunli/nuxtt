@@ -1,0 +1,3 @@
+[submodule "nuxt_content"]
+	path = nuxt_content
+	url = https://github.com/showthesunli/node-interview.git
