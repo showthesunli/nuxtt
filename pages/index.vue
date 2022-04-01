@@ -1,18 +1,24 @@
 <template>
-  <article>
-    <h1>{{ page.title }}</h1>
-    <nuxt-content :document="page" />
-  </article>
+  <div>
+    <NuxtLink to="/articles">文章列表</NuxtLink>
+    <Nuxt-Link to="/articles/hello">hello.md</Nuxt-Link>
+    <Nuxt-Link to="/articles/hi">hi.md</Nuxt-Link>
+
+    <article>
+      <nuxt-content :document="page" />
+    </article>
+  </div>
 </template>
+
 
 <script>
 export default {
-  async asyncData ({ $content }) {
-    const page = await $content('hello').fetch()
+  async asyncData({ $content, route }) {
+    const page = await $content("hello").fetch();
 
     return {
-      page
-    }
-  }
-}
+      page,
+    };
+  },
+};
 </script>
