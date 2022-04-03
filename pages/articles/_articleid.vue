@@ -7,7 +7,7 @@
 export default {
   
   async asyncData({ $content, params }) {
-    const article = await $content(params.articleid).fetch();
+    const article = await $content("notes",params.articleid).fetch();
     return {
       article
     };
