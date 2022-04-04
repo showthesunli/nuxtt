@@ -16,7 +16,7 @@ export default {
   async asyncData({$content}) {
     const articles = await $content("notes")
       .sortBy("createdAt", "asc")
-    //   .limit(12)
+      .limit(12)
       .fetch();
     return {articles}
   },
