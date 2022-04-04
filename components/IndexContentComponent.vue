@@ -17,10 +17,5 @@
 </template>
 
 <script>
-import AsideContentAds from "./AsideContentAds.vue";
-export default {
-  components: {
-    AsideContentAds,
-  },
-};
+
 </script>
