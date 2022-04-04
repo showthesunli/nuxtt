@@ -1,5 +1,5 @@
 <template>
-  <el-menu mode="horizontal" background-color="#545c64" text-color="#fff">
+  <el-menu mode="horizontal" background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
     <el-menu-item index="1"
       ><router-link to="/">首页</router-link></el-menu-item
     >
